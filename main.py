@@ -290,7 +290,7 @@ async def title(ctx: commands.Context, *, arg: str = 'help'):
         if title.name == arg:
             # 参加
             if message.author in title.owners:
-                await message.reply_and_delete('あなたは既にに参加しています')
+                await message.reply_and_delete('あなたは既に参加しています')
                 await message.deny_and_delete()
                 return
             
